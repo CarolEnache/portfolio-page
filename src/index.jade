@@ -3,26 +3,25 @@ extends _layouts/base
 include _modules/link/link
 
 block content
-  
-  nav.navbar.navbar-fixed-top
-
-    button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse", data-target="#navigation")
-      |&#9776;
-    a.navbar-brand.float-xs-right.float-sm-left(href="#")
-      img.img-fluid(src="images/img/logo-small.png")
-    #navigation.collapse.navbar-toggleable-xs
-      ul.nav.navbar-nav.float-sm-right
+  nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+    button.navbar-toggler.navbar-toggler-left(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    a.navbar-brand(href='#')
+    #navbarNav.collapse.navbar-collapse.navbar-toggleable-xs
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home 
+            span.sr-only (current)
         li.nav-item
-          a.nav-link(href="social") CONNECT
+          a.nav-link(href='#') About
         li.nav-item
-          a.nav-link(href="who") WHO
+          a.nav-link(href='#') Portfolio
         li.nav-item
-          a.nav-link(href="work") WORK
-        li.nav-item
-          a.nav-link(href="why") WHY
-        li.nav-item
-          a.nav-link(href= "costumers") COSTUMERS
-        li.nav-item
-          a.nav-link(href="pricing") PRICING
-        li.nav-item
-          a.nav-link(href="contact") CONTACT
+          a.nav-link(href='#') Contact
+    //- Home
+  #home
+    .container
+      .row
+        .col-md-12
+          h1

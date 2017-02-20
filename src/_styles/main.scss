@@ -1,6 +1,6 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
-@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 
 // Import Modules
@@ -8,10 +8,34 @@
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
+@media(max-width:768px){
+  #home {
+    text-align:center;
+  }
+  #home img {
+    margin: 0 auto;
+  }
+}
+
 *,
 *:before,
 *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
+}
+#home {
+  background: url(/images/cover%20photo.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  margin: 0;
+}
+.navbar{
+  background-color: rgba(21,31,33,0.5);
+  border-bottom: 1px solid #dedede;
 }
