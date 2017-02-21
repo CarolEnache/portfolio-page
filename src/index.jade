@@ -3,25 +3,18 @@ extends _layouts/base
 include _modules/link/link
 
 block content
-  nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
-    button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    a.navbar-brand(href='#') Navbar
-    #navbarNav.collapse.navbar-collapse
-      ul.navbar-nav
-        li.nav-item.active
-          a.nav-link(href='#')
-            | Home 
-            span.sr-only (current)
-        li.nav-item
-          a.nav-link(href='#') Features
-        li.nav-item
-          a.nav-link(href='#') Pricing
-  //- Home
+  nav.navbar.navbar-fixed-top
 
-  section#home
-    .container
-      .row
-        .col-md-6
-          h1 Portfolio page
-          h2 Carol Enache
+    button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse", data-target="#navigation")
+      |&#9776;
+
+    #navigation.collapse.navbar-toggleable-xs
+      ul.nav.navbar-nav
+        li.nav-item
+          a.nav-link(href="#header") Home
+        li.nav-item
+          a.nav-link(href="#about") About
+        li.nav-item
+          a.nav-link(href="#portfolio") Portfolio
+        li.nav-item
+          a.nav-link(href="#contact") Contact
