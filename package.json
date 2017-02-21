@@ -10,7 +10,6 @@
     "bootstrap": "^4.0.0-alpha.6",
     "browser-sync": "~2.13.0",
     "browserify": "~13.0.1",
-    "fonts": "_fonts",
     "del": "~2.2.0",
     "envify": "~3.4.0",
     "foldero": "~0.1.1",
@@ -67,6 +66,7 @@
       "modules": "_modules",
       "layouts": "_layouts",
       "images": "_images",
+      "fonts": "_fonts",
       "styles": "_styles",
       "scripts": "_scripts",
       "data": "_data"
