@@ -25,16 +25,12 @@ body{
 }
 @media(max-width:768px) {
   #header{
-    text-align: center;
+    align-items:center;
+    font-size: 15px;
   }
-  #header .fa {
-  color:white;
-  margin:50%;
-  text-align: center;
- 
-}
 
 }
+
 .btn{
   transition: all 0.3s ease-in-out;
 }
@@ -68,18 +64,16 @@ body{
   display:flex;
   align-items:center;
 }
-#header .container{
-  position: absolute;
-  bottom: 0px;
-  height: 500px;
-  width: 100%;
-}
+// #header .container{
+//   position: absolute;
+//   bottom: 0px;
+//   // width: 100%;
+// }
 
 #header .right {
     position: absolute;
     right: 0px;
     width: 500px;
-   
 }
 #header .right h1 {
  font-family: 'Racing Sans One', cursive;
@@ -92,6 +86,7 @@ body{
   font-size: 20px;
   padding-right: 90px;
   text-shadow: 2px 2px black;
+  float: right;
 
 }
 #header .left {
@@ -102,12 +97,13 @@ body{
     font-size: 65px;
     text-shadow: 2px 2px black;
 }
+#header .chevron{
+  position:absolute;
+  bottom: 80px;
+}
 
 #header .fa {
-  color:white;
-  margin:20%;
-  text-align: center;
- 
+  color:white; 
 }
 
 #header .fa:hover {
