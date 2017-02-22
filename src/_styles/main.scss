@@ -2,7 +2,7 @@
 @import 'node_modules/normalize.css/normalize';
 // @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/font-awesome/scss/font-awesome.scss';
-
+@import 'node_modules/font-awesome-animation/src/_font-awesome-animation.scss';
 
 // Import Modules
 // @import '../_modules/link/link'; 
@@ -23,14 +23,16 @@ body{
   height: 100%;
   font-family: 'Alegreya Sans', sans-serif;
 }
+
 @media(max-width:768px) {
-  #header{
-    align-items:center;
-    font-size: 15px;
+  #header .right{
+    margin: 0 auto;
   }
 
 }
-
+.clearfix {
+    overflow: auto;
+}
 .btn{
   transition: all 0.3s ease-in-out;
 }
@@ -57,18 +59,12 @@ body{
 #header {
   background: url(/images/cover%20photo.jpg) center center no-repeat;
   background-size: cover;
-  background-color: rgba(0,0,0,0.5);
   width:100%;
   height: 100%;
   color: white;
   display:flex;
   align-items:center;
 }
-// #header .container{
-//   position: absolute;
-//   bottom: 0px;
-//   // width: 100%;
-// }
 
 #header .right {
     position: absolute;
@@ -76,11 +72,11 @@ body{
     width: 500px;
 }
 #header .right h1 {
- font-family: 'Racing Sans One', cursive;
+  font-family: 'Racing Sans One', cursive;
   font-size: 45px;
   text-shadow: 2px 2px black;
-
 }
+
 #header .right p {
   font-family: 'Racing Sans One', cursive;
   font-size: 20px;
@@ -91,7 +87,7 @@ body{
 }
 #header .left {
     position: absolute;
-    left: 0px;
+    left: 100px;
     width: 500px;
     font-family: 'Racing Sans One', cursive;
     font-size: 65px;
@@ -109,7 +105,6 @@ body{
 #header .fa:hover {
   color:grey;
 }
-
 
 
 
