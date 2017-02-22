@@ -44,11 +44,12 @@ body{
 }
 
 .navbar .nav .nav-item .nav-link {
-  color:#d1d1d1;
+  color:white;
+  padding: 5px;
 }
 
 .navbar .nav .nav-item .nav-link:hover {
-  color:#fff;
+  color:grey;
 }
 
 .navbar-toggler {
@@ -63,8 +64,9 @@ body{
   height: 100%;
   color: white;
   display:flex;
-  align-items:center;
+  align-items:center; 
 }
+
 
 #header .right {
     position: absolute;
@@ -105,6 +107,7 @@ body{
 #header .fa:hover {
   color:grey;
 }
+
 
 
 
