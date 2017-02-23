@@ -12,16 +12,20 @@ block content
       ul.nav.navbar-nav
         li.nav-item
           a.nav-link(href="#header")
+           button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="HOME")
             i.fa.fa-home.fa-2x
         li.nav-item
           a.nav-link(href="#about")
-            i.fa.fa-id-card-o.fa-2x
+            button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="ABOUT")
+              i.fa.fa-id-card-o.fa-2x
+        li.nav-item
+          a.nav-link(href="#contact")
+            button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="CONTACT")
+              i.fa.fa-envelope.fa-2x
         li.nav-item
           a.nav-link(href="#portfolio")
-            i.fa.fa-file-powerpoint-o.fa-2x
-        li.nav-item
-          a.nav-link(href="#contact") 
-            i.fa.fa-envelope.fa-2x
+            button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="PORTFOLIO")
+              i.fa.fa-file-powerpoint-o.fa-2x
     //- header-//
 
   section#header
@@ -37,7 +41,7 @@ block content
       .row.chevron
         .col-md-12.text-xs-center
           a(href="#about")
-            i.fa.fa-chevron-down.faa-float.animated.faa-fast.fa-3x
+            i.fa.fa-chevron-circle-down.faa-float.animated.faa-fast.fa-3x
 
         //- about
   section#about
