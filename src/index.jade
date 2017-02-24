@@ -38,7 +38,7 @@ block content
         //- about
   section#about
     .container
-      h1 About
+      h2.sectiont About
       hr(align="center" width="15%" color="white")
       p.lead Hi, I’m Carol. I have more than 5 years experience in hospitality management, working in high end venues in Bucharest, London and Abu Dhabi. I’m currently refocussing my carrier in order to become a Front End Developer.
       p.lead Meeting deadlines, ability to plan, customer service, leadership, working independently, researching, being adaptable, ability to explain things to others and most of all, being self-motivated are just some of my transferable skills.
@@ -52,8 +52,9 @@ block content
       .row
 
         .col-md-12
-          h2 Portfolio
+          h2.sectiont Portfolio
           hr(align="center" width="30%")
+      br
       .row
         .col-md-3.col-sm-6
             
@@ -154,6 +155,29 @@ block content
               h4.card-title Work in progress
               p.card-text
                 | Coming soon.
+      //- contact
+
+  section#contact
+    .container
+      .row
+        .col-md-12
+          h2.sectiont Get in touch 
+          hr(align="center" width="30%")
+          
+
+      .row
+        .col-md-12.form-back
+          form
+            .col-md-12
+              fieldset.form-group
+                input#email.form-control.form-control-lg(type="email" placeholder="email")
+              fieldset.form-group
+                input#name.form-control.form-control-lg(type="email" placeholder="name")
+              fieldset.form-group
+                textarea#message.form-control.form-control-lg(placeholder="message" rows="3")
+              button.btn.btn-outline-info.btn-block(type="submit") Submit
+
+
 
 
 
