@@ -8,49 +8,51 @@ block content
     button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse", data-target="#navigation")
       |&#9776;
 
-    #navigation.collapse.navbar-toggleable-xs
+    #navigation.collapse.navbar-toggleable-sm
       ul.nav.navbar-nav
         li.nav-item
-          a.nav-link(href="#header")
-           button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="HOME")
-            i.fa.fa-home.fa-2x
+          a.nav-link(href="#header") HOME
         li.nav-item
-          a.nav-link(href="#about")
-            button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="ABOUT")
-              i.fa.fa-id-card-o.fa-2x
+          a.nav-link(href="#about") ABOUT
         li.nav-item
-          a.nav-link(href="#contact")
-            button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="CONTACT")
-              i.fa.fa-envelope.fa-2x
+          a.nav-link(href="#contact") CONTACT
         li.nav-item
-          a.nav-link(href="#portfolio")
-            button(type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="PORTFOLIO")
-              i.fa.fa-file-powerpoint-o.fa-2x
+          a.nav-link(href="#portfolio") PORTFOLIO
     //- header-//
 
   section#header
     .container-fluid
-      .row.try
+      .row
         .col-md-6.left.hidden-md-down
           h1 Front End Developer
           hr(align="left" width="79%" color="white")
-        .col-md-6.right
+        .col-md-6.col-sm-12.right
           h1 Personal Portfolio
           hr(align="left" width="80%" color="white")
           p.lead - Carol Enache
       .row.chevron
-        .col-md-12.text-xs-center
+        .col-md-12
           a(href="#about")
             i.fa.fa-chevron-circle-down.faa-float.animated.faa-fast.fa-3x
 
         //- about
   section#about
     .container
+      h1 About
+      hr(align="center" width="15%" color="white")
+      p.lead Hi, I’m Carol. I have more than 5 years experience in hospitality management, working in high end venues in Bucharest, London and Abu Dhabi. I’m currently refocussing my carrier in order to become a Front End Developer.
+      p.lead Meeting deadlines, ability to plan, customer service, leadership, working independently, researching, being adaptable, ability to explain things to others and most of all, being self-motivated are just some of my transferable skills.
+      p.lead I have proficient knowledge in HTML 5, CSS 3, Javascript, and JQuery and also familiar with Node, Sass, Jade, Gulp and Git.
+      img(src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAIlAAAAJDNiNDNhYjg3LWQwYmUtNGViNS04ZjM4LWVhZTQyZjhjZGQxZA.jpg" width="50px" heigth="50px" alt="Carol img")
+  //- portfolio
+
+  section#portfolio
+    .container
       .row
+
         .col-md-12
-          h1 about
-
-
-
+          h2 Portfolio
+          hr(align="left" width="50%")
+          p some text at the moment
 
 
