@@ -23,6 +23,11 @@ body{
   height: 100%;
   font-family: 'Alegreya Sans', sans-serif;
 }
+@media(max-height: 768px){
+  #portfolio .content .row .card{
+    align-items: center;
+  }
+}
 
 .btn{
   transition: all 0.3s ease-in-out;
@@ -63,6 +68,10 @@ body{
   display:flex;
   align-items:center; 
 }
+#header a{
+  text-decoration: none;
+  color: white;
+}
 #header .right {
     position: absolute;
     right: 0px;
@@ -96,18 +105,28 @@ body{
   width: 500px;
   margin: 0px 0 0 -250px;
  }
-#header .btn-outline-secondary{
-  font-size: 50px;
-  border-radius: 50%;
-  margin:5px;
-  background-color: black;
+#header .fa{
+  font-size: 35px;
+  color: white;
+  border: 2px solid white;
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  text-align: center;
+  padding: 30% ;
 }
 
 #header .chevron{
   position:absolute;
   bottom: 80px;
-  left: 50%;
-  margin:0 auto;
+  width: 50px;
+  margin:0px 0 0 -25px;
+  left:50%;
+}
+
+#header .fa:hover {
+  color:black;
+  background-color: white;
 }
 
 #header .fa {
@@ -147,11 +166,6 @@ body{
 
 }
 
-#portfolio h2 {
-  text-align: center;
-  font-family: 'Racing Sans One', cursive;
-
-}
 
 #portfolio .portfolio-img .img-overlay  {
   position: absolute;
@@ -166,6 +180,11 @@ body{
   opacity:0;
   z-index:0;
   transition:all 0.5s ease-in-out;
+}
+#portfolio .content  {
+  overflow: scroll;
+  height: 768px;
+  width: 100%;
 }
 
 #portfolio .portfolio-img{
@@ -192,6 +211,8 @@ body{
   background-color: rgba(0,0,0,0.5);
   padding:30px;
   border-radius:2%;
+  width:50%;
+  margin: 0px 0 0 25%;
 }
 
 

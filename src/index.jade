@@ -24,31 +24,39 @@ block content
     .container-fluid
       .row
         .col-md-6.left.hidden-md-down
-          h1 Front End Developer
-          hr(align="left" width="79%" color="white")
+          a(href="#about")
+            h1 Front End Developer
+            hr(align="left" width="79%" color="white")
         .col-md-6.col-sm-12.right
-          h1 Personal Portfolio
-          hr(align="left" width="80%" color="white")
-          p.lead - Carol Enache
+          a(href="#portfolio")
+            h1 Personal Portfolio
+            hr(align="left" width="80%" color="white")
+            p.lead - Carol Enache
 
 
       .row
         .col-md-6.button-case.col-xs-12
-            button(type="button").btn.btn-outline-secondary
-              i.fa.fa-facebook
-            button.btn.btn-outline-secondary
-              i.fa.fa-github
-            button.btn.btn-outline-secondary
-              i.fa.fa-linkedin
-            button.btn.btn-outline-secondary
-              i.fa.fa-free-code-camp
-            button.btn.btn-outline-secondary
-              i.fa.fa-codepen
+          ul.list-inline
+            li.list-inline-item
+              a(href="https://www.facebook.com/enache.carol" target="_blank")
+                i.fa.fa-facebook
+            li.list-inline-item
+              a(href="https://github.com/CarolEnache" target="_blank")
+                i.fa.fa-github
+            li.list-inline-item
+              a(href="https://www.linkedin.com/in/carol-enache-59504294/" target="_blank")
+                i.fa.fa-linkedin
+            li.list-inline-item
+              a(href="https://www.freecodecamp.com/carolenache" target="_blank")
+                i.fa.fa-free-code-camp
+            li.list-inline-item
+              a(href="http://codepen.io/CarolEnache/" target="_blank")
+                i.fa.fa-codepen
 
       .row.chevron
         .col-md-12
           a(href="#about")
-            i.fa.fa-chevron-circle-down.faa-float.animated.faa-fast.fa-3x
+            i.fa.fa-chevron-down.faa-float.animated.faa-fast.fa-3x
 
         //- about
   section#about
@@ -70,110 +78,111 @@ block content
           h2.sectiont Portfolio
           hr(align="center" width="30%")
       br
-      .row
-        .col-md-3.col-sm-6
-            
+      .content
+        .row
+          .col-md-3.col-sm-6
+              
+              .card
+                .portfolio-img
+                  a(href="http://codepen.io/CarolEnache/pen/zNzrBv" target="_blank")
+                    img.card-img-top.img-fluid(src='http://www.pbsacademy.com/wp-content/uploads/2015/08/Da-Jerry-Thomas-ad-oggi.jpg', alt='Card image cap')
+                    .img-overlay
+                .card-block
+                  h4.card-title Tribute Page
+                  p.card-text
+                    | This is a tribute page to Jerry Thomas, as part of a chalage on FreeCodeCamp.
+
+          .col-md-3.col-sm-6
+
             .card
               .portfolio-img
-                a(href="http://codepen.io/CarolEnache/pen/zNzrBv" target="_blank")
-                  img.card-img-top.img-fluid(src='http://www.pbsacademy.com/wp-content/uploads/2015/08/Da-Jerry-Thomas-ad-oggi.jpg', alt='Card image cap')
+                a(href="#")
+                  img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?4', alt='Card image cap')
                   .img-overlay
               .card-block
-                h4.card-title Tribute Page
+                h4.card-title Work in progress
                 p.card-text
-                  | This is a tribute page to Jerry Thomas, as part of a chalage on FreeCodeCamp.
+                  | Coming soon.
 
-        .col-md-3.col-sm-6
+          .col-md-3.col-sm-6
 
-          .card
-            .portfolio-img
-              a(href="#")
-                img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?3', alt='Card image cap')
-                .img-overlay
-            .card-block
-              h4.card-title Work in progress
-              p.card-text
-                | Coming soon.
+            .card
+              .portfolio-img
+                a(href="#")
+                  img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?44', alt='Card image cap')
+                  .img-overlay
+              .card-block
+                h4.card-title Work in progress
+                p.card-text
+                  | Coming soon.
 
-        .col-md-3.col-sm-6
+          .col-md-3.col-sm-6
 
-          .card
-            .portfolio-img
-              a(href="#")
-                img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?4', alt='Card image cap')
-                .img-overlay
-            .card-block
-              h4.card-title Work in progress
-              p.card-text
-                | Coming soon.
-
-        .col-md-3.col-sm-6
-
-          .card
-            .portfolio-img
-              a(href="#")
-                img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?9', alt='Card image cap')
-                .img-overlay
-            .card-block
-              h4.card-title Work in progress
-              p.card-text
-                | Coming soon.
+            .card
+              .portfolio-img
+                a(href="#")
+                  img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?9', alt='Card image cap')
+                  .img-overlay
+              .card-block
+                h4.card-title Work in progress
+                p.card-text
+                  | Coming soon.
 
 
 
 
-      .row
-        .col-md-3.col-sm-6
+        .row
+          .col-md-3.col-sm-6
 
-          .card
-            .portfolio-img
-              a(href="#")
-                img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?5', alt='Card image cap')
-                .img-overlay
-            .card-block
-              h4.card-title Work in progress
-              p.card-text
-                | Coming soon.
+            .card
+              .portfolio-img
+                a(href="#")
+                  img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?5', alt='Card image cap')
+                  .img-overlay
+              .card-block
+                h4.card-title Work in progress
+                p.card-text
+                  | Coming soon.
 
-        .col-md-3.col-sm-6
+          .col-md-3.col-sm-6
 
-          .card
-            .portfolio-img
-              a(href="#")
-                img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?6', alt='Card image cap')
-                .img-overlay
-            .card-block
-              h4.card-title Work in progress
-              p.card-text
-                | Coming soon.
+            .card
+              .portfolio-img
+                a(href="#")
+                  img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?6', alt='Card image cap')
+                  .img-overlay
+              .card-block
+                h4.card-title Work in progress
+                p.card-text
+                  | Coming soon.
 
-        .col-md-3.col-sm-6
+          .col-md-3.col-sm-6
 
-          .card
-            .portfolio-img
-              a(href="#")
-                img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?7', alt='Card image cap')
-                .img-overlay
-            .card-block
-              h4.card-title Work in progress
-              p.card-text
-                | Coming soon.
+            .card
+              .portfolio-img
+                a(href="#")
+                  img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?7', alt='Card image cap')
+                  .img-overlay
+              .card-block
+                h4.card-title Work in progress
+                p.card-text
+                  | Coming soon.
 
-        .col-md-3.col-sm-6
+          .col-md-3.col-sm-6
 
-          .card
-            .portfolio-img
-              a(href="#")
-                img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?', alt='Card image cap')
-                .img-overlay
-            .card-block
-              h4.card-title Work in progress
-              p.card-text
-                | Coming soon.
-      //- contact
+            .card
+              .portfolio-img
+                a(href="#")
+                  img.card-img-top.img-fluid(src='http://lorempixel.com/350/150?', alt='Card image cap')
+                  .img-overlay
+              .card-block
+                h4.card-title Work in progress
+                p.card-text
+                  | Coming soon.
+        //- contact
 
   section#contact
-    .container
+    .container-fluid
       .row
         .col-md-12
           h2.sectiont Get in touch 
@@ -191,11 +200,17 @@ block content
               fieldset.form-group
                 textarea#message.form-control.form-control-lg(placeholder="message" rows="3")
               button.btn.btn-outline-info.btn-block(type="submit") Submit
+      //- footer
 
   section#footer
     .container
       .row
-        .col-md-6
+
+        .col-md-8.col-sm-6
+          h3 About
+          p Lorem ipsum dolor sit amet, convenire patrioque referrentur id qui, idque affert petentium nec ei. 
+          p Quo an graeci placerat, te simul adipisci principes mei, in ipsum eirmod ullamcorper vim. Posse legere intellegat eu mea. Ea legendos suavitate cum.
+
 
 
 
