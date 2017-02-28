@@ -24,8 +24,9 @@ body{
   font-family: 'Alegreya Sans', sans-serif;
 }
 @media(max-height: 768px){
-  #portfolio .content .row .card{
-    align-items: center;
+
+  #footer {
+    text-align: center;
   }
 }
 
@@ -46,7 +47,8 @@ body{
 }
 
 .navbar .nav .nav-item .nav-link:hover {
-  color:grey;
+  color:black;
+  background-color: white;
 }
 
 .navbar-toggler {
@@ -105,13 +107,13 @@ body{
   width: 500px;
   margin: 0px 0 0 -250px;
  }
-#header .fa{
+#header .list-inline-item .fa{
   font-size: 35px;
   color: white;
   border: 2px solid white;
   width: 80px;
   height: 80px;
-  border-radius: 30%;
+  border-radius: 50%;
   text-align: center;
   padding: 30% ;
 }
@@ -119,13 +121,13 @@ body{
 #header .chevron{
   position:absolute;
   bottom: 80px;
-  width: 50px;
-  margin:0px 0 0 -25px;
+  width: 100px;
+  margin:0px 0 0 -60px;
   left:50%;
 }
 
 #header .fa:hover {
-  color:black;
+  color: black;
   background-color: white;
 }
 
@@ -133,9 +135,6 @@ body{
   color:white; 
 }
 
-#header .fa:hover {
-  color:grey;
-}
 // about
 
 #about{
@@ -213,6 +212,25 @@ body{
   border-radius:2%;
   width:50%;
   margin: 0px 0 0 25%;
+}
+
+// footer
+
+#footer{
+  padding:2rem 0;
+  background-color: #484848;
+  color:white;
+}
+
+#footer a{
+  color:white;
+}
+
+#footer a:hover{
+  color:black;
+}
+#footer .fa {
+  padding: 0 5px;
 }
 
 

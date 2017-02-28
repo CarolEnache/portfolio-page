@@ -56,18 +56,21 @@ block content
       .row.chevron
         .col-md-12
           a(href="#about")
-            i.fa.fa-chevron-down.faa-float.animated.faa-fast.fa-3x
+            i.fa.fa-chevron-circle-down.faa-float.animated.faa-fast.fa-3x
 
         //- about
   section#about
     .container
       h2.sectiont About
       hr.hrs(align="center" width="15%" color="white")
-      p.lead Hi, I’m Carol. I have over than 5 years experience in hospitality management, working in high end venues in Bucharest, London and Abu Dhabi. I’m currently refocussing my carrier in order to become a Front End Developer.
+      p.lead Hi, I’m Carol. I have more than 10 years experience in hospitality management, working in high-end venues in Bucharest, London and Abu Dhabi. I’m currently refocussing my carrier in order to become a Software engineer.
       p.lead Meeting deadlines, ability to plan, customer service, leadership, working independently, researching, being adaptable, ability to explain things to others and most of all, being self-motivated are just some of my transferable skills.
       p.lead I have proficient knowledge in HTML 5, CSS 3, Javascript, and JQuery. I am also familiar with Node, Sass, Jade, Gulp and Git.
       p.lead On my spare time I love road trips, good wine, excellent food and  acid jazz.
       img(src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAIlAAAAJDNiNDNhYjg3LWQwYmUtNGViNS04ZjM4LWVhZTQyZjhjZGQxZA.jpg" width="50px" heigth="50px" alt="Carol img")
+      br
+      h2.sectiont Skils
+      hr(align="center" width="15%")
   //- portfolio
 
   section#portfolio
@@ -191,15 +194,15 @@ block content
 
       .row
         .col-md-12.form-back
-          form
+          form(action="mailto:enache.carol@gmail.com" method="post" enctype="text/plain")
             .col-md-12
               fieldset.form-group
                 input#email.form-control.form-control-lg(type="email" placeholder="email")
               fieldset.form-group
-                input#name.form-control.form-control-lg(type="email" placeholder="name")
+                input#name.form-control.form-control-lg(type="text" placeholder="name")
               fieldset.form-group
                 textarea#message.form-control.form-control-lg(placeholder="message" rows="3")
-              button.btn.btn-outline-info.btn-block(type="submit") Submit
+              button.btn.btn-outline-info.btn-block(type="submit" value="send") Submit
       //- footer
 
   section#footer
@@ -207,9 +210,53 @@ block content
       .row
 
         .col-md-8.col-sm-6
-          h3 About
+          h3 About me:
           p Lorem ipsum dolor sit amet, convenire patrioque referrentur id qui, idque affert petentium nec ei. 
           p Quo an graeci placerat, te simul adipisci principes mei, in ipsum eirmod ullamcorper vim. Posse legere intellegat eu mea. Ea legendos suavitate cum.
+          ul.list-inline
+            li.list-inline-item
+              a(href="https://www.facebook.com/enache.carol" target="_blank")
+                i.fa.fa-facebook
+            li.list-inline-item
+              a(href="https://github.com/CarolEnache" target="_blank")
+                i.fa.fa-github
+            li.list-inline-item
+              a(href="https://www.linkedin.com/in/carol-enache-59504294/" target="_blank")
+                i.fa.fa-linkedin
+            li.list-inline-item
+              a(href="https://www.freecodecamp.com/carolenache" target="_blank")
+                i.fa.fa-free-code-camp
+            li.list-inline-item
+              a(href="http://codepen.io/CarolEnache/" target="_blank")
+                i.fa.fa-codepen
+        .col-md-4.col-sm-6
+          h3 Say hello:
+          ul.list-unstyled
+            li
+              i.fa.fa-map-marker
+                strong
+                  | Location: 
+                | London, UK.
+            li
+              a(href="mailto:enache.carol@gmail.com")
+                i.fa.fa-envelope
+                  strong
+                    | Email: 
+                  | enache.carol@gmail.com
+            li
+              i.fa.fa-mobile
+                strong
+                  | Phone: 
+                | 07496046247
+      .row
+        .col-md-12
+          p &copy; 2017 Designed by Carol Enache
+
+
+             
+               
+
+
 
 
 
