@@ -5,7 +5,7 @@
 @import 'node_modules/font-awesome-animation/src/_font-awesome-animation.scss';
 
 // Import Modules
-// @import '../_modules/link/link'; 
+// @import '../_modules/link/link';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -23,12 +23,12 @@ body{
   height: 100%;
   font-family: 'Alegreya Sans', sans-serif;
 }
-@media(max-height: 768px){
-
-  #footer {
-    text-align: center;
-  }
-}
+// @media screen (max-height: 768px){
+//
+//   #footer {
+//     text-align: center;
+//   }
+// }
 
 .btn{
   transition: all 0.3s ease-in-out;
@@ -55,91 +55,102 @@ body{
   color:white;
 }
 // header
-
+.container-fluid {
+  margin-left: inherit;
+  margin-right: inherit;
+}
 #header {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
-    ),url(/images/cover%20photo.jpg); 
+    ),url(/images/cover%20photo.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: center center fixed , center center fixed;
-  background-size: cover, cover; 
-  width:100%;
+  background-size: cover, cover;
+  // width:100%;
   height: 100%;
   color: white;
-  display:flex;
-  align-items:center; 
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
-#header a{
-  text-decoration: none;
-  color: white;
+#header {
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  h1 {
+    padding-top: 40vh;
+  }
 }
 #header .right {
-    position: absolute;
-    right: 0px;
-    width: 500px;
+    // position: absolute;
+    // right: 0px;
+    // width: 500px;
 }
 #header .right h1 {
   font-family: 'Racing Sans One', cursive;
   font-size: 45px;
   text-shadow: 2px 2px grey;
 }
-
-#header .right p {
-  font-family: 'Racing Sans One', cursive;
-  font-size: 20px;
-  padding-right: 90px;
-  text-shadow: 2px 2px grey;
-  float: right;
-
+#header a {
+  border-bottom: 2px solid white;
+  white-space: nowrap;
 }
-#header .left {
-    position: absolute;
-    left: 100px;
-    width: 500px;
+
+#header {
+  .right p {
     font-family: 'Racing Sans One', cursive;
-    font-size: 65px;
+    font-size: 20px;
+    padding-right: 90px;
     text-shadow: 2px 2px grey;
-}
-#header .button-case{
-  position:absolute;
-  bottom:190px;
-  width: 500px;
-  margin: 0px 0 0 -250px;
- }
-#header .list-inline-item .fa{
-  font-size: 35px;
-  color: white;
-  border: 2px solid white;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  text-align: center;
-  padding: 30% ;
-}
+    float: right;
 
-#header .chevron{
-  position:absolute;
-  bottom: 80px;
-  width: 100px;
-  margin:0px 0 0 -60px;
-  left:50%;
-}
+  }
+  .left {
+    font-family: 'Racing Sans One', cursive;
+    text-shadow: 2px 2px grey;
+  }
 
-#header .fa:hover {
-  color: black;
-  background-color: white;
-}
+  .chevron{
+    // position:absolute;
+    // bottom: 80px;
+    // width: 100px;
+    // margin:0px 0 0 -60px;
+    // left:50%;
+  }
+  .chevron,
+  .button-case {
+    a {
+      border: none;
+    }
+  }
+  .list-inline-item .fa{
+    font-size: 35px;
+    color: white;
+    border: 2px solid white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 30% ;
+  }
+  .fa:hover {
+    color: black;
+    background-color: white;
+  }
 
-#header .fa {
-  color:white; 
+  .fa {
+    color:white;
+  }
 }
 
 // about
 
 #about{
-  width:100%;
-  height:100%;
+  // width:100%;
+  // height:100%;
+  padding:5rem 0;
 }
 
 .sectiont {
@@ -148,20 +159,22 @@ body{
 }
 #about p {
   text-align: center;
+  padding: 10px;
 }
 #about img{
   display:block;
   margin:0 auto;
   width:20%;
   border-radius: 50%;
+  padding: 20px;
 }
 // portfolio
 
 #portfolio{
   padding:5rem 0;
   background-color: #f6f6f6;
-  width:100%;
-  height: 100%;
+  // width:100%;
+  // height: 100%;
 
 }
 
@@ -181,9 +194,9 @@ body{
   transition:all 0.5s ease-in-out;
 }
 #portfolio .content  {
-  overflow: scroll;
-  height: 768px;
-  width: 100%;
+  // overflow: scroll;
+  // height: 768px;
+  // width: 100%;
 }
 
 #portfolio .portfolio-img{
@@ -203,15 +216,15 @@ body{
 #contact {
   background: url(../images/contact_header.jpg) center center no-repeat;
   background-size: cover;
-  height:50%;
+  // height:50%;
 }
 
 #contact .form-back{
   background-color: rgba(0,0,0,0.5);
   padding:30px;
   border-radius:2%;
-  width:50%;
-  margin: 0px 0 0 25%;
+  // width:50%;
+  // margin: 0px 0 0 25%;
 }
 
 // footer
@@ -232,5 +245,3 @@ body{
 #footer .fa {
   padding: 0 5px;
 }
-
-

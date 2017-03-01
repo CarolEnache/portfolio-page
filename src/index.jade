@@ -24,18 +24,16 @@ block content
     .container-fluid
       .row
         .col-md-6.left.hidden-md-down
-          a(href="#about")
-            h1 Front End Developer
-            hr(align="left" width="79%" color="white")
-        .col-md-6.col-sm-12.right
-          a(href="#portfolio")
-            h1 Personal Portfolio
-            hr(align="left" width="80%" color="white")
-            p.lead - Carol Enache
+          h1
+            a(href="#about") Front End Developer
+        .col-md-6.col-sm-12.text-xs-right
+          h1
+            a(href="#portfolio") Personal Portfolio
+          .lead - Carol Enache
 
 
       .row
-        .col-md-6.button-case.col-xs-12
+        .col-md-12.button-case.col-xs-12.text-xs-center
           ul.list-inline
             li.list-inline-item
               a(href="https://www.facebook.com/enache.carol" target="_blank")
@@ -54,7 +52,7 @@ block content
                 i.fa.fa-codepen
 
       .row.chevron
-        .col-md-12
+        .col-xs-2.offset-xs-5.text-xs-center
           a(href="#about")
             i.fa.fa-chevron-circle-down.faa-float.animated.faa-fast.fa-3x
 
@@ -63,14 +61,11 @@ block content
     .container
       h2.sectiont About
       hr.hrs(align="center" width="15%" color="white")
-      p.lead Hi, I’m Carol. I have more than 10 years experience in hospitality management, working in high-end venues in Bucharest, London and Abu Dhabi. I’m currently refocussing my carrier in order to become a Software engineer.
+      p.lead Hi, I’m Carol. I have over 10 years experience in hospitality management, working in high-end venues in Bucharest, London and Abu Dhabi. I’m currently refocussing my career in order to become a Software engineer.
       p.lead Meeting deadlines, ability to plan, customer service, leadership, working independently, researching, being adaptable, ability to explain things to others and most of all, being self-motivated are just some of my transferable skills.
-      p.lead I have proficient knowledge in HTML 5, CSS 3, Javascript, and JQuery. I am also familiar with Node, Sass, Jade, Gulp and Git.
+      p.lead I love HTML5, CSS3, JavaScript and jQuery. I like to enhance my project build with node, Sass, Jade, Gulp and Git.
       p.lead On my spare time I love road trips, good wine, excellent food and  acid jazz.
       img(src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAIlAAAAJDNiNDNhYjg3LWQwYmUtNGViNS04ZjM4LWVhZTQyZjhjZGQxZA.jpg" width="50px" heigth="50px" alt="Carol img")
-      br
-      h2.sectiont Skils
-      hr(align="center" width="15%")
   //- portfolio
 
   section#portfolio
@@ -193,16 +188,15 @@ block content
           
 
       .row
-        .col-md-12.form-back
+        .col-xs-10.offset-xs-1.form-back
           form(action="mailto:enache.carol@gmail.com" method="post" enctype="text/plain")
-            .col-md-12
-              fieldset.form-group
-                input#email.form-control.form-control-lg(type="email" placeholder="email")
-              fieldset.form-group
-                input#name.form-control.form-control-lg(type="text" placeholder="name")
-              fieldset.form-group
-                textarea#message.form-control.form-control-lg(placeholder="message" rows="3")
-              button.btn.btn-outline-info.btn-block(type="submit" value="send") Submit
+            fieldset.form-group
+              input#email.form-control.form-control-lg(type="email" placeholder="email")
+            fieldset.form-group
+              input#name.form-control.form-control-lg(type="text" placeholder="name")
+            fieldset.form-group
+              textarea#message.form-control.form-control-lg(placeholder="message" rows="3")
+            button.btn.btn-outline-info.btn-block(type="submit" value="send") Submit
       //- footer
 
   section#footer
@@ -255,11 +249,3 @@ block content
 
              
                
-
-
-
-
-
-
-
-
